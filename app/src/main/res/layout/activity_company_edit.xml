@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ui_background"
+    tools:context="com.sdot.yidai.fragment.company.CompanyEditActivity">
+
+    <include layout="@layout/title_layout"></include>
+    
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/company_refresh"
+        android:layout_below="@+id/title_re_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="公司基本资料"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="15sp"
+                                android:id="@+id/conpanyName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="24dp"
+                                android:layout_marginStart="24dp"
+                                android:paddingTop="10dp"
+                                android:text="滨江天天分公司"
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="0.5dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textView34"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginStart="25dp"
+                                android:textSize="12sp"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text="法人姓名" />
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:id="@+id/faren_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginRight="20dp"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text=""
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:id="@+id/textView37"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginStart="25dp"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text="统一社会信用代码" />
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:id="@+id/company_code"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginRight="20dp"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:text=""
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:id="@+id/textView39"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginStart="25dp"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="5dp"
+                                android:text="审核状态" />
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:id="@+id/company_state"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginRight="20dp"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="5dp"
+                                android:text=""
+                                android:textColor="@color/red" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+                
+
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="员工资料"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.sdot.yidai.weight.ListViewForScrollView
+                    android:id="@+id/managerList"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:divider="@color/ui_background"
+                    android:dividerHeight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </com.sdot.yidai.weight.ListViewForScrollView>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/staff_txt"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="暂无员工资料"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/add_staff_layout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="73dp"
+                        android:layout_marginStart="73dp"
+                        app:srcCompat="@mipmap/icon_add" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/imageView11"
+                        android:layout_toRightOf="@+id/imageView11"
+                        android:text="添加员工" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

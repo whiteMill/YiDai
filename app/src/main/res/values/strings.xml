@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">驿贷</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_page">驿贷</string>
+    <string name="bill_page">账单</string>
+    <string name="my_page">我的</string>
+    <string name="suijiesh">网点随借随还</string>
+
+    <array name="time">
+        <item>授信一年 3个月内随借随还</item>
+    </array>
+
+    <array name="wangdain_time">
+        <item>3个月</item>
+        <item>6个月</item>
+    </array>
+
+    <array name="edit_sjsh">
+        <item>修改申请单</item>
+        <item>修改资料</item>
+    </array>
+
+    <array name="edit_wdxyd">
+        <item>修改申请单</item>
+        <item>修改资料</item>
+    </array>
+
+    <array name="edit_rzzl">
+        <item>修改申请单</item>
+        <item>修改资料</item>
+    </array>
+
+    <array name="edit_mdbt">
+        <item>修改申请单</item>
+        <item>修改资料</item>
+    </array>
+
+    <array name="rongzi_time">
+        <item>24期</item>
+        <item>36期</item>
+    </array>
+
+    <array name="company_edit">
+        <item>修改公司信息</item>
+        <item>公司借款记录</item>
+    </array>
+
+
+    <array name="brand_sort">
+        <item>中通快递</item>
+        <item>圆通快递</item>
+        <item>申通快递</item>
+        <item>百世快递</item>
+        <item>韵达快递</item>
+        <item>天天快递</item>
+        <item>龙邦快递</item>
+        <item>优速快递</item>
+        <item>速尔快递</item>
+    </array>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_background"
+    tools:context="com.sdot.yidai.ui.MyEvaluateActivity">
+
+    <include layout="@layout/title_layout"></include>
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title_re_layout"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/recommend_shape"
+        android:id="@+id/relativeLayout2">
+
+        <ImageView
+            android:id="@+id/serview_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/recommend_head_icon" />
+
+
+        <TextView
+            android:id="@+id/service_name"
+            android:background="@color/tou_gray"
+            android:text="nick"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_toRightOf="@+id/relativeLayout2"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/relativeLayout2"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:text="给你的专属客服打个分" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/roomRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:layout_above="@+id/relativeLayout3"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/kefu_shape"
+        android:id="@+id/relativeLayout3">
+
+        <EditText
+            android:id="@+id/advice_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="说些什么。。。"
+            android:paddingBottom="50dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:textSize="@dimen/login_txt_size" />
+
+    </RelativeLayout>
+
+    <Button
+        android:background="@drawable/log_btn_shape"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textSize="@dimen/login_txt_size"
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/colorPrimary"
+        android:text="提交" />
+
+
+</RelativeLayout>

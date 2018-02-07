@@ -1,0 +1,322 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_background"
+    tools:context="com.sdot.yidai.fragment.PersonFragment">
+
+    <View
+        android:layout_alignParentTop="true"
+        android:id="@+id/paddingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/paddingView"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/first_page"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/title_text_size"
+            android:layout_centerHorizontal="true"
+            android:text="@string/my_page"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/touxiang_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/logo_layout"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/linear_click_selector"
+        android:clickable="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/touxiang"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/icon_head_yg" />
+
+        <TextView
+            android:textSize="@dimen/intro_txt_size"
+            android:id="@+id/weidenglu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/touxiang"
+            android:layout_toRightOf="@+id/touxiang"
+            android:text="未登录"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ziliao_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/touxiang_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/linear_click_selector"
+        android:clickable="true"
+        android:layout_marginTop="1dp">
+
+        <ImageView
+            android:id="@+id/ziliao"
+            android:paddingTop="@dimen/y28"
+            android:paddingBottom="@dimen/y28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:src="@drawable/ziliao" />
+
+        <TextView
+            android:textSize="@dimen/intro_txt_size"
+            android:id="@+id/ziliao_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginStart="@dimen/x30"
+            android:layout_toEndOf="@+id/ziliao"
+            android:layout_toRightOf="@+id/ziliao"
+            android:textColor="@color/black"
+            android:text="我的申请" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ziliao_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/linear_click_selector"
+        android:id="@+id/tuijian_layout"
+        android:clickable="true"
+        android:layout_marginTop="1dp">
+
+        <ImageView
+            android:id="@+id/tuijian"
+            android:paddingTop="@dimen/y28"
+            android:paddingBottom="@dimen/y28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:src="@drawable/tuijian" />
+
+        <TextView   android:textSize="@dimen/intro_txt_size"
+            android:id="@+id/tuijian_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginStart="@dimen/x30"
+            android:layout_toEndOf="@+id/tuijian"
+            android:layout_toRightOf="@+id/tuijian"
+            android:textColor="@color/black"
+            android:text="我的推荐" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/company_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ziliao_layout"
+        android:background="@drawable/linear_click_selector"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/company_iamge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:paddingTop="@dimen/y28"
+            android:paddingBottom="@dimen/y28"
+            android:src="@drawable/tuijian" />
+
+        <TextView  android:textSize="@dimen/intro_txt_size"
+            android:id="@+id/company_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginStart="@dimen/x30"
+            android:layout_toEndOf="@+id/company_iamge"
+            android:layout_toRightOf="@+id/company_iamge"
+            android:text="公司资料"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/company_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/linear_click_selector"
+        android:id="@+id/pingjia_layout"
+        android:clickable="true"
+        android:layout_marginTop="1dp">
+
+        <ImageView
+            android:id="@+id/pingjia"
+            android:paddingTop="@dimen/y28"
+            android:paddingBottom="@dimen/y28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:src="@drawable/pingjia" />
+
+        <TextView  android:textSize="@dimen/intro_txt_size"
+            android:id="@+id/pingjia_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginStart="@dimen/x30"
+            android:layout_toEndOf="@+id/pingjia"
+            android:layout_toRightOf="@+id/pingjia"
+            android:textColor="@color/black"
+            android:text="我的评价" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pingjia_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/linear_click_selector"
+        android:id="@+id/myapply_layout"
+        android:clickable="true"
+        android:layout_marginTop="1dp">
+
+        <ImageView
+            android:id="@+id/myapply"
+            android:paddingTop="@dimen/y28"
+            android:paddingBottom="@dimen/y28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:src="@drawable/pingjia" />
+
+        <TextView  android:textSize="@dimen/intro_txt_size"
+            android:id="@+id/myapply_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginStart="@dimen/x30"
+            android:layout_toEndOf="@+id/myapply"
+            android:layout_toRightOf="@+id/myapply"
+            android:textColor="@color/black"
+            android:text="借款申请" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myapply_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/linear_click_selector"
+        android:id="@+id/shezhi_layout"
+        android:clickable="true"
+        android:layout_marginTop="1dp">
+
+        <ImageView
+            android:id="@+id/shezhi"
+            android:paddingTop="@dimen/y28"
+            android:paddingBottom="@dimen/y28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:src="@drawable/shezhi" />
+
+        <TextView  android:textSize="@dimen/intro_txt_size"
+            android:id="@+id/shezhi_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginStart="@dimen/x30"
+            android:layout_toEndOf="@+id/shezhi"
+            android:layout_toRightOf="@+id/shezhi"
+            android:textColor="@color/black"
+            android:text="设置" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/kefu_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y140"
+        android:paddingBottom="@dimen/y24"
+        android:paddingLeft="@dimen/x160"
+        android:paddingRight="@dimen/x160"
+        android:paddingTop="@dimen/y24"
+        android:text="联系客服"
+        android:background="@drawable/kefu_shape"
+        android:textSize="@dimen/shiwu_sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y90"
+        android:text="服务时间:周一到周五 9:00-17:30"
+        android:textSize="@dimen/tips_size" />
+
+
+</RelativeLayout>

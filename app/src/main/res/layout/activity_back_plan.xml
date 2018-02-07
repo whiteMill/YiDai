@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_background"
+    tools:context="com.sdot.yidai.mdbtfragment.mdmoney.BackPlanActivity">
+
+    <include layout="@layout/title_layout"></include>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/title_re_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:clickable="true"
+            android:background="@drawable/linear_click_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/first_txt"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/first_money"
+                android:layout_marginRight="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="true"
+            android:background="@drawable/linear_click_selector"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/second_txt"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/second_money"
+                android:layout_marginRight="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:clickable="true"
+            android:background="@drawable/linear_click_selector"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/third_txt"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/third_money"
+                android:layout_marginRight="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

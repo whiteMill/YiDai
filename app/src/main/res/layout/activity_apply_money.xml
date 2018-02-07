@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.sdot.yidai.ui.ApplyMoneyActivity">
+
+    <include layout="@layout/title_layout"></include>
+
+    <ScrollView
+        android:layout_above="@+id/apply_now"
+        android:layout_below="@+id/title_re_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/name_layout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:text="产品名称" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_toEndOf="@+id/name_txt"
+                    android:layout_toRightOf="@+id/name_txt"
+                    android:text="网点随借随还" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/time_layout"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="1dp"
+                android:layout_below="@+id/name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/time_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:text="产品期限" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_toEndOf="@+id/time_txt"
+                    android:layout_toRightOf="@+id/time_txt"
+                    android:text="3个月" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="1dp"
+                android:id="@+id/money_layout"
+                android:background="@color/colorPrimary"
+                android:layout_below="@+id/time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/money_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:text="借款金额" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_toEndOf="@+id/money_txt"
+                    android:layout_toRightOf="@+id/money_txt"
+                    android:text="" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/textview_ttx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/login_txt_size"
+                android:textColor="@color/black"
+                android:layout_below="@+id/money_layout"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:text="填写资料"/>
+
+            <LinearLayout
+                android:layout_below="@+id/textview_ttx"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/shenqingren_layout"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:id="@+id/shenqingren_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="申请人姓名" />
+
+                    <EditText
+                        android:id="@+id/shenqingren"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@null"
+                        android:hint="点击输入"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/login_txt_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/phone_layout"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:id="@+id/phone_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="手机号码" />
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@null"
+                        android:hint="点击输入"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/login_txt_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/ic_layout"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/ic_txt"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="身份证号码" />
+
+                    <EditText
+                        android:id="@+id/ic"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@null"
+                        android:hint="点击输入"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/login_txt_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/wangdian_layout"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/wangdian_txt"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="快递网点名称" />
+
+                    <EditText
+                        android:id="@+id/wangdian"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@null"
+                        android:hint="点击输入"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/login_txt_size" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/area_layout"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:id="@+id/area_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="经营区域" />
+
+                    <EditText
+                        android:id="@+id/area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="130dp"
+                        android:layout_marginStart="140dp"
+                        android:background="@null"
+                        android:hint="点击输入"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/login_txt_size" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/tuijian_layout"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tuijian_txt"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="推荐人" />
+
+                    <EditText
+                        android:id="@+id/tuijian"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:hint="点击输入"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/login_txt_size" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/apply_now"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="立即申请"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimary"/>
+
+
+</RelativeLayout>

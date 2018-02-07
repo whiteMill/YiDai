@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_background"
+    tools:context="com.sdot.yidai.ui.ApplySuccessActivity">
+
+    <include layout="@layout/title_layout"
+        android:id="@+id/include"></include>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        app:srcCompat="@mipmap/choice" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="提交成功"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="正在审核中..."
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="请尽快在【账户】中完成借记卡的绑定,稍后3个工作日内会有工作人员与您电话联系。"
+        android:textSize="@dimen/login_txt_size" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_centerHorizontal="true"
+        android:text="请您务必保持电话畅通" />
+
+    <Button
+        android:id="@+id/backMainBtn"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/log_btn_shape"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/colorPrimary"
+        android:text="返回首页" />
+
+    <Button
+        android:id="@+id/bindCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/backMainBtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/log_btn_accent_shape"
+        android:text="申请资料" />
+
+
+</RelativeLayout>

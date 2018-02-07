@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.sdot.yidai"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.2.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+        }
+
+        manifestPlaceholders = [
+                XG_ACCESS_ID : "2100272873",
+                XG_ACCESS_KEY: "A9JWZ6I56W1H",
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.lzy.net:okgo:3.0.4'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.ashokvarma.android:bottom-navigation-bar:1.3.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.google.code.gson:gson-parent:2.8.0'
+    compile 'com.contrarywind:Android-PickerView:3.2.6'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.33'
+    compile 'com.github.anzaizai:EasyRefreshLayout:1.3.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.0'
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.zhihu.android:matisse:0.4.3'
+    compile 'top.zibin:Luban:1.1.2'
+    compile 'pub.devrel:easypermissions:0.1.9'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    //信鸽jar
+    compile 'com.tencent.xinge:xinge:3.2.0-beta'
+    //wup包
+    compile 'com.tencent.wup:wup:1.0.0.E-release'
+    //mid包
+    compile 'com.tencent.mid:mid:4.0.0-beta'
+    compile 'cn.bingoogolapple:bga-badgeview:1.1.3@aar'
+
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.contrarywind:Android-PickerView:2.1.1'
+
+}

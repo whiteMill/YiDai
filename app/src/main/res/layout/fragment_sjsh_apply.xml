@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_background"
+    tools:context="com.sdot.yidai.billfragment.excuse.SjshApplyFragment">
+
+
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/time_layout"
+        android:layout_below="@+id/title_re_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:text="借款时间" />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/jiekaun_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/qixian_layout"
+        android:layout_below="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="还款期限" />
+
+        <TextView
+            android:id="@+id/huankaun_qixian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="三个月" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/qixi_layout"
+        android:layout_below="@+id/qixian_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="日息" />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/rixi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:text="0.00元" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/tixian_layout"
+        android:layout_below="@+id/qixi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="提现金额" />
+
+        <EditText
+            android:id="@+id/tixian_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_toEndOf="@+id/textView13"
+            android:layout_toRightOf="@+id/textView13"
+            android:textSize="@dimen/login_txt_size"
+            android:inputType="numberDecimal"
+            android:background="@null"
+            android:hint="提现金额大于1000元"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+    </RelativeLayout>
+
+    <Button
+        android:background="@drawable/log_btn_shape"
+        android:id="@+id/button"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/login_txt_size"
+        android:layout_below="@+id/tixian_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="确认提现" />
+
+</RelativeLayout>

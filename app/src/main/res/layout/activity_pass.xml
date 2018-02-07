@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_background"
+    tools:context="com.sdot.yidai.ui.PassActivity">
+
+    <include layout="@layout/title_layout"></include>
+
+    <TextView
+        android:id="@+id/pass_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/complete"
+        android:layout_alignStart="@+id/complete"
+        android:layout_below="@+id/title_re_layout"
+        android:layout_marginTop="71dp"
+        android:text="登录密码"
+        android:textSize="@dimen/login_txt_size" />
+
+    <TextView
+        android:id="@+id/re_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pass_number"
+        android:layout_alignStart="@+id/pass_number"
+        android:layout_below="@+id/phone_line"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/login_txt_size"
+        android:text="重复密码" />
+
+    <View
+        android:id="@+id/phone_line"
+        android:background="@color/deep_line_color"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/pass_number"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="0.5dp">
+    </View>
+
+    <EditText
+        android:id="@+id/pass_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pass_number"
+        android:layout_alignBottom="@+id/pass_number"
+        android:layout_marginLeft="30dp"
+        android:layout_toEndOf="@+id/pass_number"
+        android:layout_toLeftOf="@+id/eyes_state"
+        android:layout_toRightOf="@+id/pass_number"
+        android:layout_toStartOf="@+id/eyes_state"
+        android:background="@null"
+        android:hint="输入密码"
+        android:inputType="textPassword"
+        android:textSize="@dimen/login_txt_size" />
+
+    <EditText
+        android:id="@+id/re_pass_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/re_pass"
+        android:layout_alignBottom="@+id/re_pass"
+        android:layout_alignEnd="@+id/view2"
+        android:layout_alignLeft="@+id/pass_input"
+        android:layout_alignRight="@+id/view2"
+        android:layout_alignStart="@+id/pass_input"
+        android:background="@null"
+        android:hint="再次输入密码"
+        android:inputType="textPassword"
+        android:textSize="@dimen/login_txt_size" />
+
+    <View
+        android:background="@color/deep_line_color"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/re_pass"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="0.5dp"
+        android:id="@+id/view2">
+    </View>
+
+    <Button
+        android:id="@+id/complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:background="@drawable/log_btn_shape"
+        android:textColor="@color/colorPrimary"
+        android:text="完成"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/eyes_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/complete"
+        android:layout_alignRight="@+id/complete"
+        android:layout_alignTop="@+id/pass_input"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        app:srcCompat="@mipmap/close_eyes" />
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/re_pass"
+        android:layout_alignStart="@+id/re_pass"
+        android:layout_below="@+id/view2"
+        android:text="请使用6-14位数字、字母组合"
+        android:textSize="@dimen/tips_size" />
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_background"
+    tools:context="com.sdot.yidai.ui.BackHisActivity">\
+
+    <include layout="@layout/title_layout"></include>
+
+    <RelativeLayout
+        android:layout_below="@+id/title_re_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="暂无记录"
+            android:visibility="invisible"
+            android:id="@+id/tip_txt"
+            android:layout_centerInParent="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:drawableTop="@mipmap/pic_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="1dp"
+            android:id="@+id/his_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

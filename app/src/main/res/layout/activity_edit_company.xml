@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_background"
+    tools:context="com.sdot.yidai.fragment.company.EditCompanyActivity">
+
+    <include layout="@layout/title_layout"></include>
+
+    <LinearLayout
+        android:layout_below="@+id/title_re_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/gongsi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:text="公司名称"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/agongsi_name_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:hint="输入公司名称"
+                android:text=""
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/login_txt_size" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/gongshang_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:text="统一社会信用代码"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/gongshang_no_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:hint="输入统一社会信用代码"
+                android:text=""
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/login_txt_size" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/faren_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:text="法人姓名"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/faren_name_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:hint="输入法人姓名"
+                android:text=""
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/login_txt_size" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/xx_layout"
+            android:background="@drawable/linear_click_selector"
+            android:clickable="true"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/gongsi_dizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:text="公司地址"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/gongsi_dizhi_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:hint="请选择公司地址"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/login_txt_size" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/xiangzi_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:text="详细地址"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/xiangzi_address_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:hint="输入公司详细地址"
+                android:text=""
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/login_txt_size" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/sure"
+            android:text="确认"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/log_btn_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

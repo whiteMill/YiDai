@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_background"
+    tools:context="com.sdot.yidai.ui.BackH5Activity">
+
+    <include layout="@layout/title_layout"></include>
+
+
+    <WebView
+        android:layout_marginTop="1dp"
+        android:id="@+id/backH5View"
+        android:layout_below="@+id/title_re_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+</RelativeLayout>

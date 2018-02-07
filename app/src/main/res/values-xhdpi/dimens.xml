@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fixed_height_bottom_padding">5dp</dimen>
+    <dimen name="title_text_size">16sp</dimen>
+    <dimen name="tips_size">12sp</dimen>
+    <dimen name="main_intro_txt">12sp</dimen>
+    <dimen name="login_txt_size">14sp</dimen>
+    <dimen name="grid_expected_size">120dp</dimen>
+    <dimen name="intro_txt_size">13sp</dimen>
+    <dimen name="ele_sp">11sp</dimen>
+    <dimen name="edu_size">20sp</dimen>
+    <dimen name="ten_sp">10sp</dimen>
+    <dimen name="shiwu_sp">15sp</dimen>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/apply_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:paddingTop="10dp"
+            android:text=""
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/apply_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:paddingTop="10dp"
+            android:text=""
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_marginTop="5dp"
+            android:id="@+id/line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/deep_gray"
+            android:layout_below="@+id/apply_date"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp">
+        </View>
+
+
+        <RelativeLayout
+            android:id="@+id/benjin_layout"
+            android:layout_below="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textColor="@color/default_font_color"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="3dp"
+                android:paddingTop="10dp"
+                android:text="本金" />
+
+
+            <TextView
+                android:textColor="@color/default_font_color"
+                android:textSize="12sp"
+                android:id="@+id/benjin"
+                android:paddingTop="10dp"
+                android:paddingBottom="3dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lixi_layout"
+            android:layout_below="@+id/benjin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/default_font_color"
+                android:textSize="12sp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:text="利息"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/default_font_color"
+                android:textSize="12sp"
+                android:id="@+id/lixi"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

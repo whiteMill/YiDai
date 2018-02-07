@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/sjsh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/chanpin_layout"
+        android:background="@drawable/linear_click_selector"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="产品期限" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/right_jiantou" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/qixian_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rijunpai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/meiri_shou"
+            android:layout_alignBottom="@+id/meiri_shou"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="日均收件量"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:layout_toRightOf="@id/rijunpai"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/meiri_shou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:hint="输入每日快递收件数"
+            android:inputType="number"
+            android:singleLine="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/login_txt_size" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="0.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rijunshou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="日均派件量"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_toRightOf="@id/rijunshou"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/meiri_pai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:hint="输入每日快递派件数"
+            android:singleLine="true"
+            android:inputType="number"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/login_txt_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/choose_address_layout"
+        android:background="@drawable/linear_click_selector"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/shengshiqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:text="省、市、区县" />
+
+        <ImageView
+            android:id="@+id/shengshiqu_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/right_jiantou" />
+
+        <TextView
+            android:id="@+id/address_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/shengshiqu"
+            android:layout_alignBottom="@+id/shengshiqu"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/shengshiqu"
+            android:layout_toRightOf="@+id/shengshiqu"
+            android:text=""
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="0.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/xxdizhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:text="详细地址"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_toRightOf="@id/xxdizhi"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/address_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+
+            android:hint="输入详细地址"
+            android:text=""
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/login_txt_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/brand_sort_layout"
+        android:background="@drawable/linear_click_selector"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/daili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="代理品牌" />
+
+        <ImageView
+            android:id="@+id/daili_iamge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/right_jiantou" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/kuaidi_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/daili"
+            android:layout_alignBottom="@+id/daili"
+            android:layout_marginLeft="41dp"
+            android:layout_marginStart="41dp"
+            android:layout_toEndOf="@+id/daili"
+            android:layout_toRightOf="@+id/daili"
+            android:text="其他" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/shenqingedu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="申请额度" />
+
+
+        <EditText
+            android:id="@+id/shurujine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/shenqingedu"
+            android:layout_alignBottom="@+id/shenqingedu"
+            android:layout_marginLeft="41dp"
+            android:layout_marginStart="41dp"
+            android:layout_toEndOf="@+id/shenqingedu"
+            android:layout_toLeftOf="@+id/yulan_huankuan"
+            android:layout_toRightOf="@+id/shenqingedu"
+            android:layout_toStartOf="@+id/yulan_huankuan"
+            android:background="@null"
+            android:hint="输入你的借款金额"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/login_txt_size" />
+
+        <TextView
+            android:id="@+id/yulan_huankuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/shurujine"
+            android:layout_alignBottom="@+id/shurujine"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:padding="5dp"
+            android:text="还款预览"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/advice_money"
+        android:background="@drawable/xu_line_text"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="贷款预估额:0.00元"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/apply_money_btn"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/log_btn_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/note_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp">
+
+            <CheckBox
+                android:checked="true"
+                android:padding="5dp"
+                android:id="@+id/user_permissios_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                style="@style/CustomCheckBoxTheme"/>
+
+            <TextView
+                android:textSize="@dimen/tips_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我已阅读，并同意" />
+
+            <TextView
+                android:id="@+id/user_permission"
+                android:textSize="@dimen/tips_size"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《金融信息服务协议》"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

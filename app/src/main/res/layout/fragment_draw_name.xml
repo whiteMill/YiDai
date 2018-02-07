@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.sdot.yidai.dialogfragment.DrawNameFragment">
+
+    <ImageView
+        android:id="@+id/image_draw"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+       />
+
+    <Button
+        android:id="@+id/sure_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_draw"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@+id/cancle_draw"
+        android:layout_toStartOf="@+id/cancle_draw"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="确定"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/cancle_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_draw"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:text="取消"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/reset_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_draw"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/cancle_draw"
+        android:layout_toRightOf="@+id/cancle_draw"
+        android:background="@color/colorAccent"
+        android:text="重置"
+        android:textColor="@color/colorPrimary" />
+</RelativeLayout>

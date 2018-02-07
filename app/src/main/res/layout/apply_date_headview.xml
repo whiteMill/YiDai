@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="@dimen/title_text_size"
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="基础信息" />
+
+    <RelativeLayout
+        android:id="@+id/name_layout"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="申请人姓名" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/name_txt"
+            android:layout_alignBottom="@+id/name_txt"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_toEndOf="@+id/name_txt"
+            android:layout_toRightOf="@+id/name_txt"
+            android:textColor="@color/black"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phone_layout"
+        android:background="@drawable/linear_click_selector"
+        android:layout_marginTop="1dp"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/name_layout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/phone_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="手机号码" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/phone_txt"
+            android:layout_alignBottom="@+id/phone_txt"
+            android:layout_marginLeft="73dp"
+            android:layout_marginStart="73dp"
+            android:layout_toEndOf="@+id/phone_txt"
+            android:layout_toRightOf="@+id/phone_txt"
+            android:text=""
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ic_layout"
+        android:background="@drawable/linear_click_selector"
+        android:layout_marginTop="1dp"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_layout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/ic_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="身份证号码" />
+
+        <TextView
+            android:id="@+id/ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ic_txt"
+            android:layout_alignBottom="@+id/ic_txt"
+            android:layout_marginLeft="59dp"
+            android:layout_marginStart="59dp"
+            android:layout_toEndOf="@+id/ic_txt"
+            android:layout_toRightOf="@+id/ic_txt"
+            android:text=""
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wangdian_layout"
+        android:background="@drawable/linear_click_selector"
+        android:layout_marginTop="1dp"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_layout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/wanghdian_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="快递网点名称" />
+
+        <TextView
+            android:id="@+id/wangdian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/wanghdian_txt"
+            android:layout_alignBottom="@+id/wanghdian_txt"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp"
+            android:layout_toEndOf="@+id/wanghdian_txt"
+            android:layout_toRightOf="@+id/wanghdian_txt"
+            android:text=""
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_layout"
+        android:background="@drawable/linear_click_selector"
+        android:layout_marginTop="1dp"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wangdian_layout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/area_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="经营区域" />
+
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/area_txt"
+            android:layout_alignBottom="@+id/area_txt"
+            android:layout_marginLeft="73dp"
+            android:layout_marginStart="73dp"
+            android:layout_toEndOf="@+id/area_txt"
+            android:layout_toRightOf="@+id/area_txt"
+            android:text=""
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/address_layout"
+        android:background="@drawable/linear_click_selector"
+        android:layout_marginTop="1dp"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/area_layout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/address_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="办公地址" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/address_txt"
+            android:layout_alignBottom="@+id/address_txt"
+            android:layout_marginLeft="73dp"
+            android:layout_marginStart="73dp"
+            android:layout_toEndOf="@+id/address_txt"
+            android:layout_toRightOf="@+id/address_txt"
+            android:text=""
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <TextView
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="@dimen/title_text_size"
+        android:id="@+id/qiyezizhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="企业资质" />
+
+
+</LinearLayout>

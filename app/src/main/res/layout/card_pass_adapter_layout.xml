@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/y20"
+    android:background="@color/colorPrimary"
+    android:layout_height="@dimen/y215"
+    android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y40">
+
+            <ImageView
+                android:id="@+id/pro_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x24"
+                android:background="@mipmap/icon_sjsh" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/protuct_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x18"
+                android:layout_toRightOf="@+id/pro_logo"
+                android:text="随借随还"
+                android:textSize="@dimen/title_text_size" />
+
+            <TextView
+                android:id="@+id/money_apply"
+                android:background="@drawable/zd_apply_shape"
+                android:textColor="@color/colorAccent"
+                android:paddingLeft="@dimen/x26"
+                android:paddingRight="@dimen/x26"
+                android:paddingTop="@dimen/y10"
+                android:paddingBottom="@dimen/y10"
+                android:textSize="@dimen/ele_sp"
+                android:layout_marginRight="@dimen/x28"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即借款"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/name_layout"
+            android:id="@+id/card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+          <!--  <com.sdot.yidai.weight.HorizontalProgressBar
+                android:layout_marginTop="@dimen/y50"
+                android:id="@+id/horizontal_progress_view"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_marginRight="@dimen/x24"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y6" />-->
+
+            <ImageView
+                android:id="@+id/slidePic"
+                android:layout_marginTop="@dimen/y20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/pic_slide_blue"/>
+
+            <com.sdot.yidai.weight.EduLineView
+                android:visibility="visible"
+                android:id="@+id/eduLine"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_marginRight="@dimen/x24"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y6"
+                android:layout_marginTop="@dimen/y50"
+                app:unuseColor="#dedede"
+                app:useColor="@color/colorAccent" />
+
+            <TextView
+                android:layout_below="@+id/eduLine"
+                android:id="@+id/use_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/x58"
+                android:layout_marginRight="@dimen/x58"
+                android:layout_marginTop="@dimen/y15"
+                android:text=""
+                android:textColor="@color/zd_txt_color"
+                android:textSize="@dimen/ele_sp" />
+
+            <TextView
+                android:id="@+id/unuse_money_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/eduLine"
+                android:layout_alignStart="@+id/eduLine"
+                android:layout_below="@+id/eduLine"
+                android:layout_marginTop="@dimen/y15"
+                android:text="我的额度"
+                android:textColor="@color/zd_txt_color"
+                android:textSize="@dimen/ele_sp" />
+
+            <TextView
+                android:id="@+id/unuse_money"
+                android:layout_marginLeft="@dimen/x8"
+                android:textColor="@color/black"
+                android:layout_alignBaseline="@+id/unuse_money_txt"
+                android:layout_toRightOf="@+id/unuse_money_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ele_sp"/>
+        </RelativeLayout>
+
+</RelativeLayout>

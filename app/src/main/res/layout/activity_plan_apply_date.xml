@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.sdot.yidai.mdbtfragment.mdback.PlanApplyDateActivity">
+
+    <include layout="@layout/title_layout"></include>
+
+    <LinearLayout
+        android:layout_below="@+id/title_re_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="还款期数"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/plan_no"
+                android:textColor="@color/black"
+                android:layout_marginRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="第一期"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yuqi_layout"
+            android:visibility="visible"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="逾期罚金"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/yuqi_money"
+                android:textColor="@color/black"
+                android:layout_marginRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="0.00"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/benqi_layout"
+            android:visibility="visible"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="本期应还金额"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/benqi_money"
+                android:textColor="@color/black"
+                android:layout_marginRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="0.00"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="共计应还"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/wait_money"
+                android:textColor="@color/black"
+                android:layout_marginRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text=""
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="还款金额"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:inputType="numberDecimal"
+                android:gravity="right"
+                android:background="@null"
+                android:id="@+id/back_money"
+                android:textColor="@color/black"
+                android:layout_marginRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="15sp"
+                android:hint="请输入还款金额"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/back_date_layout"
+            android:clickable="true"
+            android:background="@drawable/linear_click_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="还款日期"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/back_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/jiantou"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="2012-12-12"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/jiantou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/right_jiantou" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="账单状态"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/back_state"
+                android:textColor="@color/black"
+                android:layout_marginRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text=""
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:padding="15dp"
+            android:text="上传还款凭证"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <GridView
+            android:numColumns="4"
+            android:id="@+id/picGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </GridView>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/sure_back"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/log_btn_shape"
+            android:textColor="@color/colorPrimary"
+            android:text="确认还款"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

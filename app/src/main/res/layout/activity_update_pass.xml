@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sdot.yidai.ui.UpdatePassActivity">
+
+    <include layout="@layout/title_layout"></include>
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_below="@+id/title_re_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp">
+
+            <EditText
+                android:id="@+id/edit_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_toLeftOf="@+id/pass_eyes_state"
+                android:background="@null"
+                android:hint="请设置6-14位字母数字组合"
+                android:inputType="textPassword"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/login_txt_size" />
+
+            <ImageView
+                android:id="@+id/pass_eyes_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/line_deep"
+                android:layout_alignRight="@+id/line_deep"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="44dp"
+                android:layout_marginRight="44dp"
+                android:padding="5dp"
+                app:srcCompat="@mipmap/close_eyes" />
+
+            <View
+                android:id="@+id/line_deep"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/edit_pass"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/deep_line_color"></View>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/log_btn_shape"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="完成"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

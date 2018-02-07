@@ -1,0 +1,541 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_background"
+    tools:context="com.sdot.yidai.fragment.FirstPageFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/tips_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_layout"
+                android:background="@color/tips_bac"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="还款提醒:您有一笔还款即将到期，请及时处理！"
+                    android:textColor="@color/tips_text"
+                    android:textSize="@dimen/tips_size" />
+
+                <TextView
+                    android:id="@+id/tips_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tips"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="5dp"
+                    android:text="立即还款"
+                    android:textColor="@color/tips_deep_color"
+                    android:textSize="@dimen/tips_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/banner_one">
+
+                <cn.bingoogolapple.badgeview.BGABadgeImageView
+                    android:id="@+id/red_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/icon_message_nomal"
+                    app:badge_bgColor="@color/red"
+                    app:badge_gravity="rightTop"
+                    app:badge_horizontalMargin="5dp"
+                    app:badge_verticalMargin="5dp"></cn.bingoogolapple.badgeview.BGABadgeImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/txt_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/icon_fire"
+                    android:layout_marginLeft="@dimen/x26"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_fire"/>
+
+                <TextView
+                    android:paddingTop="@dimen/y28"
+                    android:paddingBottom="@dimen/y28"
+                    android:layout_toRightOf="@+id/icon_fire"
+                    android:id="@+id/chanpin_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="热门产品"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/icon_sjsh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp"
+                    android:src="@mipmap/icon_sjsh" />
+
+                <View
+                    android:id="@+id/centerView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/black"
+                    android:visibility="invisible"></View>
+
+                <RelativeLayout
+                    android:id="@+id/sjsh_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/centerView1"
+                    android:layout_toEndOf="@+id/icon_sjsh"
+                    android:layout_toRightOf="@+id/icon_sjsh">
+
+                    <TextView
+                        android:id="@+id/sj_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/x18"
+                        android:layout_marginStart="@dimen/x18"
+                        android:text="随借随还"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/title_text_size" />
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/sj_wudiya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/sj_shouxin"
+                        android:layout_alignBottom="@+id/sj_shouxin"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginStart="@dimen/x20"
+                        android:layout_toEndOf="@+id/sj_txt"
+                        android:layout_toRightOf="@+id/sj_txt"
+                        android:background="@drawable/hot_txt_shape"
+                        android:padding="@dimen/x6"
+                        android:text="无抵押担保"
+                        android:textColor="#fbb46b"
+                        android:textSize="@dimen/ten_sp" />
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/sj_shouxin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginStart="@dimen/x20"
+                        android:layout_toEndOf="@+id/sj_wudiya"
+                        android:layout_toRightOf="@+id/sj_wudiya"
+                        android:background="@drawable/one_year_shape"
+                        android:padding="@dimen/x6"
+                        android:text="授信一年"
+                        android:textColor="#ff5555"
+                        android:textSize="@dimen/ten_sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/apply_sjsh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/x28"
+                    android:layout_marginRight="@dimen/x28"
+                    android:background="@drawable/apply_byn_shape"
+                    android:paddingBottom="@dimen/y12"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingRight="@dimen/x30"
+                    android:paddingTop="@dimen/y12"
+                    android:text="立即申请"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/ten_sp" />
+
+                <TextView
+                    android:id="@+id/jieduoshao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/centerView1"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:layout_marginStart="@dimen/x18"
+                    android:layout_toEndOf="@+id/icon_sjsh"
+                    android:layout_toRightOf="@+id/icon_sjsh"
+                    android:text="纯线上 易操作"
+                    android:textSize="@dimen/main_intro_txt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/icon_bait"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp"
+                    android:src="@mipmap/icon_bait" />
+
+                <View
+                    android:id="@+id/centerView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/black"
+                    android:visibility="invisible"></View>
+
+                <RelativeLayout
+                    android:id="@+id/bait_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/centerView2"
+                    android:layout_toEndOf="@+id/icon_bait"
+                    android:layout_toRightOf="@+id/icon_bait">
+
+                    <TextView
+                        android:id="@+id/baitiao_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/x18"
+                        android:layout_marginStart="@dimen/x18"
+                        android:text="面单白条"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/title_text_size" />
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/baitiao_nian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginStart="@dimen/x20"
+                        android:layout_toEndOf="@+id/baitiao_txt"
+                        android:layout_toRightOf="@+id/baitiao_txt"
+                        android:background="@drawable/one_year_shape"
+                        android:padding="@dimen/x6"
+                        android:text="授信一年"
+                        android:textColor="#ff5555"
+                        android:textSize="@dimen/ten_sp" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/apply_md"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/x28"
+                    android:layout_marginRight="@dimen/x28"
+                    android:background="@drawable/apply_byn_shape"
+                    android:paddingBottom="@dimen/y12"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingRight="@dimen/x30"
+                    android:paddingTop="@dimen/y12"
+                    android:text="立即申请"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/ten_sp" />
+
+                <TextView
+                    android:id="@+id/md_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/centerView2"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:layout_marginStart="@dimen/x18"
+                    android:layout_toEndOf="@+id/icon_bait"
+                    android:layout_toRightOf="@+id/icon_bait"
+                    android:text="利息低 时效快"
+                    android:textSize="@dimen/main_intro_txt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/icon_wangdxy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp"
+                    android:src="@mipmap/icon_wangdxy" />
+
+                <View
+                    android:id="@+id/centerView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/black"
+                    android:visibility="invisible"></View>
+
+                <RelativeLayout
+                    android:id="@+id/wangdxy_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/centerView3"
+                    android:layout_toEndOf="@+id/icon_wangdxy"
+                    android:layout_toRightOf="@+id/icon_wangdxy">
+
+                    <TextView
+                        android:id="@+id/wd_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/x18"
+                        android:layout_marginStart="@dimen/x18"
+                        android:text="网点信用贷"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/title_text_size" />
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/wd_wudiya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/md_shouxin"
+                        android:layout_alignBottom="@+id/md_shouxin"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginStart="@dimen/x20"
+                        android:layout_toEndOf="@+id/wd_txt"
+                        android:layout_toRightOf="@+id/wd_txt"
+                        android:background="@drawable/hot_txt_shape"
+                        android:padding="@dimen/x6"
+                        android:text="无抵押担保"
+                        android:textColor="#fbb46b"
+                        android:textSize="@dimen/ten_sp" />
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/md_shouxin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginStart="@dimen/x20"
+                        android:layout_toEndOf="@+id/wd_wudiya"
+                        android:layout_toRightOf="@+id/wd_wudiya"
+                        android:background="@drawable/one_year_shape"
+                        android:padding="@dimen/x6"
+                        android:text="授信一年"
+                        android:textColor="#ff5555"
+                        android:textSize="@dimen/ten_sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/apply_wdxyd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/x28"
+                    android:layout_marginRight="@dimen/x28"
+                    android:background="@drawable/apply_byn_shape"
+                    android:paddingBottom="@dimen/y12"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingRight="@dimen/x30"
+                    android:paddingTop="@dimen/y12"
+                    android:text="立即申请"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/ten_sp" />
+
+                <TextView
+                    android:id="@+id/xy_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/centerView3"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:layout_marginStart="@dimen/x18"
+                    android:layout_toEndOf="@+id/icon_wangdxy"
+                    android:layout_toRightOf="@+id/icon_wangdxy"
+                    android:text="额度高 利息低"
+                    android:textSize="@dimen/main_intro_txt" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp"
+                    android:src="@mipmap/icon_rongz" />
+
+                <View
+                    android:id="@+id/centerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/black"
+                    android:visibility="invisible"></View>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/centerView"
+                    android:layout_toEndOf="@+id/imageView13"
+                    android:layout_toRightOf="@+id/imageView13">
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/x18"
+                        android:layout_marginStart="@dimen/x18"
+                        android:text="设备融资租赁"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/title_text_size" />
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/textView46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView47"
+                        android:layout_alignBottom="@+id/textView47"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_toEndOf="@+id/textView43"
+                        android:layout_toRightOf="@+id/textView43"
+                        android:background="#ffecd6"
+                        android:padding="3dp"
+                        android:text="无抵押担保"
+                        android:textColor="#fbb46b"
+                        android:textSize="@dimen/ten_sp" />
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/textView47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginStart="9dp"
+                        android:layout_toEndOf="@+id/textView46"
+                        android:layout_toRightOf="@+id/textView46"
+                        android:background="#ffe5e5"
+                        android:padding="3dp"
+                        android:text="授信一年"
+                        android:textColor="#ff5555"
+                        android:textSize="@dimen/ten_sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/apply_rzzl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/x28"
+                    android:layout_marginRight="@dimen/x28"
+                    android:background="@drawable/apply_byn_shape"
+                    android:paddingBottom="@dimen/y12"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingRight="@dimen/x30"
+                    android:paddingTop="@dimen/y12"
+                    android:text="立即申请"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/ten_sp" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/centerView"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:layout_marginStart="@dimen/x18"
+                    android:layout_toEndOf="@+id/imageView13"
+                    android:layout_toRightOf="@+id/imageView13"
+                    android:text="全自动分拣设备专属"
+                    android:textSize="@dimen/main_intro_txt" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

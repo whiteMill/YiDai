@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/record_shape">
+
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/no_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="5dp"
+            android:text="未还清"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:id="@+id/state_line"
+        android:layout_below="@+id/state_layout"
+        android:background="@color/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"></View>
+
+    <TextView
+        android:id="@+id/jiekuan_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/state_line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="借款金额" />
+
+    <TextView
+        android:id="@+id/shengyu_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/jiekuan_txt"
+        android:layout_alignStart="@+id/jiekuan_txt"
+        android:layout_below="@+id/jiekuan_txt"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="共计利息" />
+
+    <TextView
+        android:id="@+id/qixian_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/shengyu_txt"
+        android:layout_alignLeft="@+id/shengyu_txt"
+        android:layout_below="@+id/shengyu_txt"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="借款日期" />
+
+    <TextView
+        android:id="@+id/huankuan_riqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/shengyu_txt"
+        android:layout_alignLeft="@+id/shengyu_txt"
+        android:layout_below="@+id/qixian_txt"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="借款期限" />
+
+    <TextView
+        android:id="@+id/jiekuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/jiekuan_txt"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/lixi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/jiekuan"
+        android:layout_alignRight="@+id/jiekuan"
+        android:layout_below="@+id/jiekuan"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/jieri_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lixi"
+        android:layout_alignRight="@+id/lixi"
+        android:layout_below="@+id/lixi"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/huanri_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lixi"
+        android:layout_alignRight="@+id/lixi"
+        android:layout_below="@+id/jieri_txt"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/back_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/huanri_txt"
+        android:layout_alignRight="@+id/huanri_txt"
+        android:layout_below="@+id/huanri_txt"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="12sp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/log_btn_shape"
+        android:text="立即还款" />
+
+    <TextView
+        android:id="@+id/back_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/back_now"
+        android:layout_alignBottom="@+id/back_now"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/back_now"
+        android:layout_toStartOf="@+id/back_now"
+        android:background="@color/colorAccent"
+        android:paddingBottom="3dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="3dp"
+        android:text="还款计划"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

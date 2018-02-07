@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/yindao_three">
+
+
+    <TextView
+        android:id="@+id/comeIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/apply_byn_shape"
+        android:paddingBottom="@dimen/y14"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:paddingTop="@dimen/y14"
+        android:text="立即进入"
+        android:textColor="@color/colorAccent" />
+</RelativeLayout>
