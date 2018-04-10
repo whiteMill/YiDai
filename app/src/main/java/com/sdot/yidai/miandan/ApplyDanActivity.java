@@ -325,7 +325,6 @@ public class ApplyDanActivity extends BaseActivity {
             options3Items.add(Province_AreaList);
         }
         mHandler.sendEmptyMessage(MSG_LOAD_SUCCESS);
-
     }
 
     public ArrayList<JsonBean> parseData(String result) {//Gson 解析

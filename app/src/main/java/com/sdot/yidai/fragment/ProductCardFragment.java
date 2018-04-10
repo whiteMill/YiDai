@@ -796,7 +796,6 @@ public class ProductCardFragment extends Fragment {
                                     //已删除
                                     case "DELETED":
                                         break;
-
                                     //贝兜通过
                                     case "ENABLED":
                                         YDaiApplication.getInstance().setCreditCardId(productStateVo.getSjsh().getCardId());
@@ -865,7 +864,6 @@ public class ProductCardFragment extends Fragment {
                         case "rzzl":
                             helper.setText(R.id.protuct_title, "融资租赁");
                             helper.setImageResource(R.id.pro_logo, R.mipmap.icon_rongz);
-
                                 switch (item.getState()) {
                                     //待审核
                                     case "CREATED":

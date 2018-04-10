@@ -43,9 +43,7 @@ public class DrawNameFragment extends DialogFragment {
     @BindView(R.id.reset_draw)
     Button resetDraw;
     Unbinder unbinder1;
-
     private Dialog dialog;
-
     private Bitmap mBitmap;
     private Canvas canvas;
     private Paint paint;

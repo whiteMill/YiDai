@@ -16,8 +16,6 @@ import com.sdot.yidai.billfragment.EduFragment;
 import com.sdot.yidai.model.ProductStateVo;
 import com.sdot.yidai.ui.BaseActivity;
 import com.sdot.yidai.utils.MessageEvent;
-import com.sdot.yidai.weight.EduProgressView;
-
 import org.greenrobot.eventbus.EventBus;
 
 import butterknife.BindView;

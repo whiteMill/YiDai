@@ -41,7 +41,6 @@ public class WangDiActivity extends BaseActivity {
     ProductStateVo.MdbtVo mdbtVo;
 
     Dialog dialog;
-
     String sort;
 
     @Override

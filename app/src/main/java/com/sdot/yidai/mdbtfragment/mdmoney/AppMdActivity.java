@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import com.bigkoo.pickerview.TimePickerView;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -29,12 +28,10 @@ import com.sdot.yidai.utils.MessageEvent;
 import com.sdot.yidai.utils.ToastUtils;
 import com.sdot.yidai.utils.ToolUtils;
 import com.sdot.yidai.utils.URL;
-
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -43,7 +40,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;

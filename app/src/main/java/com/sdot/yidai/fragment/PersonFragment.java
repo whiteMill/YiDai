@@ -1,6 +1,5 @@
 package com.sdot.yidai.fragment;
 
-
 import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.Dialog;
@@ -67,7 +66,6 @@ import pub.devrel.easypermissions.EasyPermissions;
  */
 public class PersonFragment extends Fragment implements EasyPermissions.PermissionCallbacks {
 
-
     @BindView(R.id.first_page)
     TextView firstPage;
     @BindView(R.id.logo_layout)
@@ -93,7 +91,6 @@ public class PersonFragment extends Fragment implements EasyPermissions.Permissi
     Dialog dialog;
     @BindView(R.id.company_layout)
     RelativeLayout companyLayout;
-
     List<Employee> employeemList;
     @BindView(R.id.paddingView)
     View paddingView;

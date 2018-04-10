@@ -1,18 +1,15 @@
 package com.sdot.yidai.ui;
-
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-
 import com.sdot.yidai.R;
 import com.sdot.yidai.app.YDaiApplication;
 import com.sdot.yidai.model.UserVo;
 import com.sdot.yidai.utils.SharedPreferencesUtils;
 import com.sdot.yidai.utils.ToastUtils;
-
 import java.util.Date;
 
 public class StartUpActivity extends AppCompatActivity {
