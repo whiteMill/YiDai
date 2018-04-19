@@ -2,7 +2,6 @@ package com.sdot.yidai.app;
 
 import android.app.Application;
 import android.content.Context;
-
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
 import com.lzy.okgo.cache.CacheMode;
