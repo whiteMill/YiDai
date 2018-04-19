@@ -29,10 +29,10 @@ import okhttp3.OkHttpClient;
  * Created by windmill on 2017/10/30.
  */
 
-public class YDaiApplication extends Application {
+public class YDaiApplication extends   Application {
 
 
-    private static YDaiApplication instance;
+    private static YDaiApplication  instance;
     private  UserVo UserVo;
     private  boolean loginsState;
     private String cookieValue;
